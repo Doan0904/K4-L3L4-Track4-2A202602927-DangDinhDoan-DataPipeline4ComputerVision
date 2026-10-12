@@ -1,0 +1,15 @@
+{
+  "student_id": "2A202602927",
+  "sync": [
+    {
+      "drive": "drive_a",
+      "avg_gap_ms": 66.0,
+      "max_gap_ms": 2884
+    },
+    {
+      "drive": "drive_b",
+      "avg_gap_ms": 73.0,
+      "max_gap_ms": 3112
+    }
+  ]
+}
