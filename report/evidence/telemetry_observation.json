@@ -1,0 +1,17 @@
+{
+  "student_id": "2A202602927",
+  "telemetry": [
+    {
+      "drive": "drive_a",
+      "clean_rows": 2968,
+      "start": "2025-10-07 08:00:00.014000+00:00",
+      "max_speed_kmh": 71.0
+    },
+    {
+      "drive": "drive_b",
+      "clean_rows": 3181,
+      "start": "2025-10-08 14:30:00.009000+00:00",
+      "max_speed_kmh": 100.0
+    }
+  ]
+}
