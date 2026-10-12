@@ -1,0 +1,44 @@
+{
+  "student_id": "2A202602927",
+  "baseline_tol_ms": 150,
+  "experiment_tol_ms": 50,
+  "before": {
+    "student_id": "2A202602927",
+    "lost_by_drive": {
+      "drive_a": 7,
+      "drive_b": 7
+    },
+    "gold_by_split": {
+      "test": 111,
+      "train": 775,
+      "val": 133
+    },
+    "gold_frames": 1019
+  },
+  "after": {
+    "student_id": "2A202602927",
+    "lost_by_drive": {
+      "drive_a": 272,
+      "drive_b": 328
+    },
+    "gold_by_split": {
+      "test": 61,
+      "train": 393,
+      "val": 84
+    },
+    "gold_frames": 538
+  },
+  "restored": {
+    "student_id": "2A202602927",
+    "lost_by_drive": {
+      "drive_a": 7,
+      "drive_b": 7
+    },
+    "gold_by_split": {
+      "test": 111,
+      "train": 775,
+      "val": 133
+    },
+    "gold_frames": 1019
+  }
+}

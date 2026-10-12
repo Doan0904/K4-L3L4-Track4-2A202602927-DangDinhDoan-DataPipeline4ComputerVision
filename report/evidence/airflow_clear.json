@@ -7,5 +7,47 @@
   "only_failed": true,
   "affected_task_count": 8,
   "affected_task_text": "Affected Tasks: 8Task nameMap IndexRun Iddbt_test_gold-1lab9-crash-20261012T195232publish_lake-1lab9-crash-20261012T195232export_dataset-1lab9-crash-20261012T195232publish_warehouse-1lab9-crash-20261012T195232dbt_run_silver-1lab9-crash-20261012T195232dbt_test_silver-1lab9-crash-20261012T195232dbt_run_gold-1lab9-crash-20261012T195232silver_frames7lab9-crash-20261012T195232",
-  "method": "Airflow UI Clear and Retry"
+  "method": "Airflow UI Clear and Retry",
+  "cleared_tasks": [
+    {
+      "task_id": "dbt_run_gold",
+      "map_index": -1,
+      "previous_state": "upstream_failed"
+    },
+    {
+      "task_id": "dbt_run_silver",
+      "map_index": -1,
+      "previous_state": "upstream_failed"
+    },
+    {
+      "task_id": "dbt_test_gold",
+      "map_index": -1,
+      "previous_state": "upstream_failed"
+    },
+    {
+      "task_id": "dbt_test_silver",
+      "map_index": -1,
+      "previous_state": "upstream_failed"
+    },
+    {
+      "task_id": "export_dataset",
+      "map_index": -1,
+      "previous_state": "upstream_failed"
+    },
+    {
+      "task_id": "publish_lake",
+      "map_index": -1,
+      "previous_state": "upstream_failed"
+    },
+    {
+      "task_id": "publish_warehouse",
+      "map_index": -1,
+      "previous_state": "upstream_failed"
+    },
+    {
+      "task_id": "silver_frames",
+      "map_index": 7,
+      "previous_state": "failed"
+    }
+  ]
 }

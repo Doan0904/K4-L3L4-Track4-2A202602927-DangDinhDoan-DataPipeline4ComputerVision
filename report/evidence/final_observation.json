@@ -1,0 +1,594 @@
+{
+  "student_id": "2A202602927",
+  "manifest": {
+    "dataset_version": "9e2a61b9153c",
+    "frames": 1019,
+    "by_split": {
+      "train": 775,
+      "val": 133,
+      "test": 111
+    },
+    "by_drive": {
+      "drive_a": 436,
+      "drive_b": 583
+    },
+    "trips_by_split": {
+      "train": 18,
+      "test": 4,
+      "val": 4
+    },
+    "manifest_sha256": "5c87cd6dc563cc347af398e301f8d07b158c49826a2ba46b73168568e2dfeb00",
+    "rules": {
+      "drop": [
+        "is_black",
+        "is_blurry",
+        "is_near_dup",
+        "not sync_ok"
+      ],
+      "split": "per trip, stratified by drive, md5 order"
+    },
+    "lineage": {
+      "bronze.raw_telemetry_a": 0,
+      "bronze.raw_telemetry_b": 0,
+      "bronze.trips_raw": 0,
+      "bronze.video_files": 1,
+      "silver.frames": 25,
+      "silver.telemetry": 0,
+      "silver.frames_flagged": 0,
+      "silver.frame_telemetry": 0,
+      "input_video_sha256": {
+        "drive_b": "bfa62703f645ff77a8578ae3fc74a00881140d38a404d43c8e2af265bbee9fdc",
+        "drive_a": "636ba1a98dfc5ba665d1c935e1d2064e69f4df360ff9ffbd15795957d5e7e9aa"
+      }
+    },
+    "created_at": "2026-10-12T20:02:09.624362+00:00"
+  },
+  "top_dropped_trips": [
+    {
+      "drive_id": "drive_a",
+      "trip_id": "trip-04622",
+      "lighting": "Day",
+      "conditions": "Clouds",
+      "frames": 60,
+      "frames_kept": 26,
+      "pct_dropped": 56.7,
+      "split": "train"
+    },
+    {
+      "drive_id": "drive_a",
+      "trip_id": "trip-03904",
+      "lighting": "Day",
+      "conditions": "Clouds",
+      "frames": 22,
+      "frames_kept": 11,
+      "pct_dropped": 50.0,
+      "split": "test"
+    },
+    {
+      "drive_id": "drive_a",
+      "trip_id": "trip-02086",
+      "lighting": "Day",
+      "conditions": "Clouds",
+      "frames": 60,
+      "frames_kept": 32,
+      "pct_dropped": 46.7,
+      "split": "val"
+    },
+    {
+      "drive_id": "drive_a",
+      "trip_id": "trip-08888",
+      "lighting": "Day",
+      "conditions": "Clouds",
+      "frames": 60,
+      "frames_kept": 36,
+      "pct_dropped": 40.0,
+      "split": "test"
+    },
+    {
+      "drive_id": "drive_a",
+      "trip_id": "trip-07774",
+      "lighting": "Day",
+      "conditions": "Clouds",
+      "frames": 34,
+      "frames_kept": 21,
+      "pct_dropped": 38.2,
+      "split": "train"
+    },
+    {
+      "drive_id": "drive_a",
+      "trip_id": "trip-06570",
+      "lighting": "Day",
+      "conditions": "Clouds",
+      "frames": 45,
+      "frames_kept": 32,
+      "pct_dropped": 28.9,
+      "split": "train"
+    },
+    {
+      "drive_id": "drive_b",
+      "trip_id": "trip-04871",
+      "lighting": "Day",
+      "conditions": "Clouds",
+      "frames": 60,
+      "frames_kept": 43,
+      "pct_dropped": 28.3,
+      "split": "train"
+    },
+    {
+      "drive_id": "drive_b",
+      "trip_id": "trip-08448",
+      "lighting": "Day",
+      "conditions": "Clouds",
+      "frames": 60,
+      "frames_kept": 45,
+      "pct_dropped": 25.0,
+      "split": "val"
+    },
+    {
+      "drive_id": "drive_a",
+      "trip_id": "trip-00003",
+      "lighting": "Day",
+      "conditions": "Clouds",
+      "frames": 60,
+      "frames_kept": 46,
+      "pct_dropped": 23.3,
+      "split": "train"
+    },
+    {
+      "drive_id": "drive_a",
+      "trip_id": "trip-02097",
+      "lighting": "Day",
+      "conditions": "Clouds",
+      "frames": 36,
+      "frames_kept": 29,
+      "pct_dropped": 19.4,
+      "split": "train"
+    },
+    {
+      "drive_id": "drive_a",
+      "trip_id": "trip-04868",
+      "lighting": "Day",
+      "conditions": "Clouds",
+      "frames": 60,
+      "frames_kept": 49,
+      "pct_dropped": 18.3,
+      "split": "train"
+    },
+    {
+      "drive_id": "drive_b",
+      "trip_id": "trip-02689",
+      "lighting": "Day",
+      "conditions": "Clouds",
+      "frames": 23,
+      "frames_kept": 19,
+      "pct_dropped": 17.4,
+      "split": "train"
+    },
+    {
+      "drive_id": "drive_a",
+      "trip_id": "trip-09608",
+      "lighting": "Day",
+      "conditions": "Clouds",
+      "frames": 41,
+      "frames_kept": 36,
+      "pct_dropped": 12.2,
+      "split": "train"
+    },
+    {
+      "drive_id": "drive_a",
+      "trip_id": "trip-07900",
+      "lighting": "Day",
+      "conditions": "Clouds",
+      "frames": 30,
+      "frames_kept": 27,
+      "pct_dropped": 10.0,
+      "split": "val"
+    },
+    {
+      "drive_id": "drive_b",
+      "trip_id": "trip-00722",
+      "lighting": "Day",
+      "conditions": "Clouds",
+      "frames": 60,
+      "frames_kept": 54,
+      "pct_dropped": 10.0,
+      "split": "train"
+    },
+    {
+      "drive_id": "drive_b",
+      "trip_id": "trip-03365",
+      "lighting": "Day",
+      "conditions": "Clouds",
+      "frames": 60,
+      "frames_kept": 54,
+      "pct_dropped": 10.0,
+      "split": "train"
+    },
+    {
+      "drive_id": "drive_b",
+      "trip_id": "trip-02736",
+      "lighting": "Day",
+      "conditions": "Clouds",
+      "frames": 60,
+      "frames_kept": 55,
+      "pct_dropped": 8.3,
+      "split": "train"
+    },
+    {
+      "drive_id": "drive_b",
+      "trip_id": "trip-06667",
+      "lighting": "Day",
+      "conditions": "Clouds",
+      "frames": 29,
+      "frames_kept": 27,
+      "pct_dropped": 6.9,
+      "split": "test"
+    },
+    {
+      "drive_id": "drive_b",
+      "trip_id": "trip-05297",
+      "lighting": "Day",
+      "conditions": "Clouds",
+      "frames": 31,
+      "frames_kept": 29,
+      "pct_dropped": 6.5,
+      "split": "val"
+    },
+    {
+      "drive_id": "drive_a",
+      "trip_id": "trip-02134",
+      "lighting": "Day",
+      "conditions": "Clouds",
+      "frames": 60,
+      "frames_kept": 57,
+      "pct_dropped": 5.0,
+      "split": "train"
+    },
+    {
+      "drive_id": "drive_b",
+      "trip_id": "trip-05905",
+      "lighting": "Day",
+      "conditions": "Clouds",
+      "frames": 60,
+      "frames_kept": 57,
+      "pct_dropped": 5.0,
+      "split": "train"
+    },
+    {
+      "drive_id": "drive_b",
+      "trip_id": "trip-04237",
+      "lighting": "Day",
+      "conditions": "Clouds",
+      "frames": 60,
+      "frames_kept": 59,
+      "pct_dropped": 1.7,
+      "split": "train"
+    },
+    {
+      "drive_id": "drive_a",
+      "trip_id": "trip-07304",
+      "lighting": "Day",
+      "conditions": "Clouds",
+      "frames": 34,
+      "frames_kept": 34,
+      "pct_dropped": 0.0,
+      "split": "train"
+    },
+    {
+      "drive_id": "drive_b",
+      "trip_id": "trip-01037",
+      "lighting": "Day",
+      "conditions": "Clouds",
+      "frames": 44,
+      "frames_kept": 44,
+      "pct_dropped": 0.0,
+      "split": "train"
+    },
+    {
+      "drive_id": "drive_b",
+      "trip_id": "trip-04324",
+      "lighting": "Day",
+      "conditions": "Clouds",
+      "frames": 60,
+      "frames_kept": 60,
+      "pct_dropped": 0.0,
+      "split": "train"
+    },
+    {
+      "drive_id": "drive_b",
+      "trip_id": "trip-09209",
+      "lighting": "Day",
+      "conditions": "Clouds",
+      "frames": 37,
+      "frames_kept": 37,
+      "pct_dropped": 0.0,
+      "split": "test"
+    }
+  ],
+  "telemetry_quality": [
+    {
+      "drive_id": "drive_a",
+      "rows_received": 3021,
+      "rows_clean": 2968,
+      "rows_duplicate": 20,
+      "rows_speed_missing": 30,
+      "rows_speed_out_of_range": 3,
+      "pct_quarantined": 1.75
+    },
+    {
+      "drive_id": "drive_b",
+      "rows_received": 3234,
+      "rows_clean": 3181,
+      "rows_duplicate": 20,
+      "rows_speed_missing": 30,
+      "rows_speed_out_of_range": 3,
+      "pct_quarantined": 1.64
+    }
+  ],
+  "dark_frames_eligible": {
+    "drive_a": 4,
+    "drive_b": 58
+  },
+  "trip_quality": [
+    {
+      "drive_id": "drive_a",
+      "trip_id": "trip-00003",
+      "avg_speed_kmh": 63.2,
+      "black": 0,
+      "blurry": 0,
+      "dark": 0,
+      "near_dup": 14,
+      "sync_lost": 0
+    },
+    {
+      "drive_id": "drive_a",
+      "trip_id": "trip-02086",
+      "avg_speed_kmh": 17.6,
+      "black": 0,
+      "blurry": 0,
+      "dark": 0,
+      "near_dup": 28,
+      "sync_lost": 0
+    },
+    {
+      "drive_id": "drive_a",
+      "trip_id": "trip-02097",
+      "avg_speed_kmh": 36.2,
+      "black": 6,
+      "blurry": 0,
+      "dark": 0,
+      "near_dup": 6,
+      "sync_lost": 0
+    },
+    {
+      "drive_id": "drive_a",
+      "trip_id": "trip-02134",
+      "avg_speed_kmh": 65.1,
+      "black": 0,
+      "blurry": 0,
+      "dark": 0,
+      "near_dup": 3,
+      "sync_lost": 0
+    },
+    {
+      "drive_id": "drive_a",
+      "trip_id": "trip-03904",
+      "avg_speed_kmh": 46.1,
+      "black": 0,
+      "blurry": 0,
+      "dark": 0,
+      "near_dup": 11,
+      "sync_lost": 0
+    },
+    {
+      "drive_id": "drive_a",
+      "trip_id": "trip-04622",
+      "avg_speed_kmh": 67.1,
+      "black": 0,
+      "blurry": 0,
+      "dark": 0,
+      "near_dup": 34,
+      "sync_lost": 0
+    },
+    {
+      "drive_id": "drive_a",
+      "trip_id": "trip-04868",
+      "avg_speed_kmh": 65.7,
+      "black": 0,
+      "blurry": 0,
+      "dark": 0,
+      "near_dup": 5,
+      "sync_lost": 6
+    },
+    {
+      "drive_id": "drive_a",
+      "trip_id": "trip-06570",
+      "avg_speed_kmh": 30.0,
+      "black": 0,
+      "blurry": 9,
+      "dark": 0,
+      "near_dup": 4,
+      "sync_lost": 0
+    },
+    {
+      "drive_id": "drive_a",
+      "trip_id": "trip-07304",
+      "avg_speed_kmh": 32.7,
+      "black": 0,
+      "blurry": 0,
+      "dark": 0,
+      "near_dup": 0,
+      "sync_lost": 0
+    },
+    {
+      "drive_id": "drive_a",
+      "trip_id": "trip-07774",
+      "avg_speed_kmh": 12.8,
+      "black": 0,
+      "blurry": 0,
+      "dark": 0,
+      "near_dup": 13,
+      "sync_lost": 0
+    },
+    {
+      "drive_id": "drive_a",
+      "trip_id": "trip-07900",
+      "avg_speed_kmh": 12.4,
+      "black": 0,
+      "blurry": 0,
+      "dark": 0,
+      "near_dup": 3,
+      "sync_lost": 0
+    },
+    {
+      "drive_id": "drive_a",
+      "trip_id": "trip-08888",
+      "avg_speed_kmh": 6.5,
+      "black": 0,
+      "blurry": 0,
+      "dark": 4,
+      "near_dup": 24,
+      "sync_lost": 0
+    },
+    {
+      "drive_id": "drive_a",
+      "trip_id": "trip-09608",
+      "avg_speed_kmh": 9.2,
+      "black": 0,
+      "blurry": 0,
+      "dark": 0,
+      "near_dup": 4,
+      "sync_lost": 1
+    },
+    {
+      "drive_id": "drive_b",
+      "trip_id": "trip-00722",
+      "avg_speed_kmh": 96.1,
+      "black": 0,
+      "blurry": 0,
+      "dark": 0,
+      "near_dup": 6,
+      "sync_lost": 0
+    },
+    {
+      "drive_id": "drive_b",
+      "trip_id": "trip-01037",
+      "avg_speed_kmh": 91.5,
+      "black": 0,
+      "blurry": 0,
+      "dark": 1,
+      "near_dup": 0,
+      "sync_lost": 0
+    },
+    {
+      "drive_id": "drive_b",
+      "trip_id": "trip-02689",
+      "avg_speed_kmh": 38.8,
+      "black": 4,
+      "blurry": 0,
+      "dark": 0,
+      "near_dup": 3,
+      "sync_lost": 0
+    },
+    {
+      "drive_id": "drive_b",
+      "trip_id": "trip-02736",
+      "avg_speed_kmh": 89.8,
+      "black": 0,
+      "blurry": 0,
+      "dark": 0,
+      "near_dup": 5,
+      "sync_lost": 0
+    },
+    {
+      "drive_id": "drive_b",
+      "trip_id": "trip-03365",
+      "avg_speed_kmh": 45.1,
+      "black": 0,
+      "blurry": 0,
+      "dark": 25,
+      "near_dup": 0,
+      "sync_lost": 6
+    },
+    {
+      "drive_id": "drive_b",
+      "trip_id": "trip-04237",
+      "avg_speed_kmh": 65.7,
+      "black": 0,
+      "blurry": 0,
+      "dark": 10,
+      "near_dup": 1,
+      "sync_lost": 0
+    },
+    {
+      "drive_id": "drive_b",
+      "trip_id": "trip-04324",
+      "avg_speed_kmh": 81.9,
+      "black": 0,
+      "blurry": 0,
+      "dark": 0,
+      "near_dup": 0,
+      "sync_lost": 0
+    },
+    {
+      "drive_id": "drive_b",
+      "trip_id": "trip-04871",
+      "avg_speed_kmh": 58.3,
+      "black": 0,
+      "blurry": 0,
+      "dark": 0,
+      "near_dup": 17,
+      "sync_lost": 0
+    },
+    {
+      "drive_id": "drive_b",
+      "trip_id": "trip-05297",
+      "avg_speed_kmh": 27.3,
+      "black": 0,
+      "blurry": 0,
+      "dark": 16,
+      "near_dup": 2,
+      "sync_lost": 0
+    },
+    {
+      "drive_id": "drive_b",
+      "trip_id": "trip-05905",
+      "avg_speed_kmh": 51.9,
+      "black": 0,
+      "blurry": 0,
+      "dark": 4,
+      "near_dup": 2,
+      "sync_lost": 1
+    },
+    {
+      "drive_id": "drive_b",
+      "trip_id": "trip-06667",
+      "avg_speed_kmh": 60.5,
+      "black": 0,
+      "blurry": 0,
+      "dark": 0,
+      "near_dup": 2,
+      "sync_lost": 0
+    },
+    {
+      "drive_id": "drive_b",
+      "trip_id": "trip-08448",
+      "avg_speed_kmh": 91.2,
+      "black": 0,
+      "blurry": 0,
+      "dark": 5,
+      "near_dup": 15,
+      "sync_lost": 0
+    },
+    {
+      "drive_id": "drive_b",
+      "trip_id": "trip-09209",
+      "avg_speed_kmh": 80.2,
+      "black": 0,
+      "blurry": 0,
+      "dark": 0,
+      "near_dup": 0,
+      "sync_lost": 0
+    }
+  ]
+}
