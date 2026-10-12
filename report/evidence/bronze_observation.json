@@ -1,0 +1,53 @@
+{
+  "student_id": "2A202602927",
+  "rows": {
+    "raw_telemetry_a": 3021,
+    "raw_telemetry_b": 3234,
+    "trips_raw": 26,
+    "video_files": 2
+  },
+  "schemas": {
+    "raw_telemetry_a": "ts_utc: string\nspeed_mps: string\nheading_deg: string\nlat: string\nlon: string\nalt_m: string\nacc_x: string\nacc_y: string\ngas: string\nbrake: string\nsteer: string\ndrive_id: string\n_source_file: string\n_batch_id: string\n_row_no: int64\n_ingested_at: timestamp[us, tz=UTC]",
+    "raw_telemetry_b": "timestamp_ms: string\nspd_kmh: string\nhdg: string\nlatitude: string\nlongitude: string\naltitude: string\nax: string\nay: string\nthrottle_pct: string\nbrake_pct: string\nsteering: string\ndrive_id: string\n_source_file: string\n_batch_id: string\n_row_no: int64\n_ingested_at: timestamp[us, tz=UTC]"
+  },
+  "videos": [
+    {
+      "drive_id": "drive_b",
+      "uri": "s3://lake/bronze/video/drive_b/raw.mp4",
+      "sha256": "bfa62703f645ff77a8578ae3fc74a00881140d38a404d43c8e2af265bbee9fdc",
+      "bytes": 15270065,
+      "video_start_utc": "2025-10-08T14:30:00+00:00",
+      "telemetry_clock_offset_ms": 1500,
+      "codec": "h264",
+      "width": 640,
+      "height": 360,
+      "fps": 10.0,
+      "duration_s": 321.4,
+      "_batch_id": "bfa62703f645",
+      "_ingested_at": "2026-10-12 19:45:00.242368+00:00"
+    },
+    {
+      "drive_id": "drive_a",
+      "uri": "s3://lake/bronze/video/drive_a/raw.mp4",
+      "sha256": "636ba1a98dfc5ba665d1c935e1d2064e69f4df360ff9ffbd15795957d5e7e9aa",
+      "bytes": 11958062,
+      "video_start_utc": "2025-10-07T08:00:00+00:00",
+      "telemetry_clock_offset_ms": 0,
+      "codec": "h264",
+      "width": 640,
+      "height": 360,
+      "fps": 10.0,
+      "duration_s": 300.1,
+      "_batch_id": "636ba1a98dfc",
+      "_ingested_at": "2026-10-12 19:44:59.796097+00:00"
+    }
+  ],
+  "history_a": [
+    {
+      "version": 0,
+      "operation": "WRITE",
+      "rows_added": 3021,
+      "predicate": null
+    }
+  ]
+}
