@@ -1,0 +1,11 @@
+{
+  "student_id": "2A202602927",
+  "run_id": "lab9-crash-20261012T195232",
+  "selected_task": "silver_frames",
+  "map_index": 7,
+  "downstream": true,
+  "only_failed": true,
+  "affected_task_count": 8,
+  "affected_task_text": "Affected Tasks: 8Task nameMap IndexRun Iddbt_test_gold-1lab9-crash-20261012T195232publish_lake-1lab9-crash-20261012T195232export_dataset-1lab9-crash-20261012T195232publish_warehouse-1lab9-crash-20261012T195232dbt_run_silver-1lab9-crash-20261012T195232dbt_test_silver-1lab9-crash-20261012T195232dbt_run_gold-1lab9-crash-20261012T195232silver_frames7lab9-crash-20261012T195232",
+  "method": "Airflow UI Clear and Retry"
+}
